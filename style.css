@@ -30,6 +30,12 @@
 	font-weight: 700;
 }
 
+.img-banner{
+	height: 622px;
+	background-image: url(./assets/image1.png) ;
+	background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 992px){
 	.nav{
 		padding: 35px;
@@ -42,10 +48,10 @@
 
 @media screen and (max-width: 800px){
 	.nav > img{
-		width: 80px;
+		width: 100px;
 	}
 
-	.nav > p{
+	.nav > p, select{
 		display: none;
 	}
 
@@ -58,7 +64,7 @@
 	.nav{
 		padding: 35px;
 		display: grid;
-		grid-template-columns: auto 50px 30px;
+		grid-template-columns: auto 30px;
 		align-items: center;
 	}
 
