@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-.icon-cel{
+.nav > i{
 	display: none;
 }
 
@@ -49,7 +49,7 @@
 		display: none;
 	}
 
-	.icon-cel{
+	.nav > i{
 		text-align: center;
 		display: block;
 		width: 100%;
