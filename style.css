@@ -4,24 +4,26 @@
 	box-sizing: border-box;
 }
 
-.nav > i{
+.nav > button{
 	display: none;
-}
-
-.nav > .logo{
-	width: 120px;
 }
 
 .nav{
 	padding: 35px;
 	display: grid;
-	grid-template-columns: 150px auto 120px 160px 120px 50px;
+	grid-template-columns: 150px auto auto 50px;
 	align-items: center;
 }
 
-.nav > a{
+.nav > .menu{
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav > .menu > a{
 	text-decoration: none;
 	color: black;
+	text-align: center;
 }
 
 .nav > select{
@@ -29,29 +31,31 @@
 	border: none;
 	background-image: url(./assets/Rectangle\ 18.svg);
 	background-repeat: no-repeat;
-	background-position: right 10px center;
+	background-position: 20px;
 	outline: none;
 	font-weight: 700;
 }
 
-.img-banner{
+.text-banner{
+	position: absolute;
 	display: grid;
 	justify-content: start;
-	grid-template-rows: 200px 180px 50px;
+	grid-template-rows: 180px 130px 50px;
 	color: #ffffff;
-	height: 622px;
-	background-image: linear-gradient(to right, rgb(0, 0, 0)37%, rgba(0, 0, 0, 0)50%), url(./assets/image1.png);
-	background-position: right;
-	font-size: 40px;
+	font-size: 24px;
 	font-weight: 300;
-	line-height: 60px;
+	line-height: 50px;
 	text-align: left;
 	padding: 81px 0 0 89px;
 }
 
-.img-banner > p{
+.img-banner > img{
+	width: 100%;
+}
+
+.text-banner > p{
 	font-family: Roboto;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 300;
 	line-height: 26px;
 	letter-spacing: 0em;
@@ -63,90 +67,91 @@
  grid-template-columns: 200px auto;
 }
 
-.img-mob{
-	display: none;
-}
 @media screen and (max-width: 992px){
 	.nav{
-		padding: 35px;
+		padding: 20px;
 		display: grid;
-		grid-template-columns: 150px auto 100px 140px 100px 50px;
+		grid-template-columns: 150px auto auto 50px;
+	}
+
+	.text-banner{
+		display: absolute;
+		justify-content: center;
+		grid-template-rows: 90px 150px 50px;
 		align-items: center;
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 20px;
+		text-align: left;
+		padding: 35px;
+	}
+
+	.text-banner > p{
+		font-family: Roboto;
+		font-size: 13px;
+		font-weight: 300;
+		line-height: 15px;
+		letter-spacing: 0em;
+		text-align: left;
 	}
 	
 }
 
 @media screen and (max-width: 800px){
-	.nav > img{
-		width: 100px;
+	.nav > button{
+		display: inline-block;
+		display: flex;
+		justify-content: center;
+		background-color: white;
+		border:none;
 	}
-
-	.nav > p, select{
-		display: none;
-	}
-
-	.nav > i{
-		text-align: center;
-		display: block;
-		width: 100%;
-	}
-
+	
 	.nav{
-		padding: 15px;
-		display: grid;
-		grid-template-columns: auto 30px;
+		padding: 20px;
+		display: flex;
+		justify-content: space-between;
 		align-items: center;
 	}
-
-	.nav > a{
+	
+	.nav > p, .nav > select, .nav > .menu > a{
 		display: none;
 	}
 	
-	.img-banner{
+	.text-banner{
+		position: relative;
 		display: grid;
-		grid-template-rows: 80px 100px 50px;
 		justify-content: center;
-		justify-items: center;
+		grid-template-rows: 90px 100px 50px;
+		align-items: center;
 		color: #000000;
-		width: auto;
-		background: none;
-		height: auto;
-		background-repeat: no-repeat;
-		background-size: 50px;
-		font-size: 15px;
-		font-weight: 300;
-		line-height: 26px;
-		text-align: center;
-		padding: 16px;
-		align-items: center;
-	}
-
-	.logos-apps{
-		display: grid;
-		grid-template-columns: 130px 120px;
-		align-items: center;
-	}
-
-	.img-banner > p{
-		font-family: Roboto;
 		font-size: 14px;
 		font-weight: 300;
+		line-height: 20px;
+		text-align: center;
+		padding: 0;
+	}
+	
+	.img-banner > img{
+		display:;
+	}
+	
+	.text-banner > p{
+		font-family: Roboto;
+		font-size: 13px;
+		font-weight: 300;
 		line-height: 15px;
+		letter-spacing: 0em;
 		text-align: center;
 	}
-
-	.logos-apps > img{
-		height: 70%;
-		display: flex;
-		flex-direction: row;
+	
+	.logos-apps{
+	 	display: grid;
+	 	grid-template-columns: auto auto;
+	 	justify-content: space-evenly;
 	}
 
-	.img-mob{
-		width: 100vw;
-		display: block;
-	}
-
-	.img-mob > img{
-		width: 100vw;
+	.logos-apps > a >img{
+		width: 100px;
 	}
 }
