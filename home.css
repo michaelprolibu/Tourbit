@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+	font-family: Dinnesxtltpro-900;
+	src: url(./fonts/DINNEXTLTPRO-BLACK.TTF);
+}
+
+@font-face {
+	font-family: Dinnesxtltpro-700;
+	src: url(./fonts/DINNEXTLTPRO-BOLD.TTF);
+}
+
+@font-face {
+	font-family: Dinnesxtltpro-800;
+	src: url(./fonts/DINNEXTLTPRO-HEAVY.TTF);
+}
+
+@font-face {
+	font-family: Dinnesxtltpro-300;
+	src: url(./fonts/DINNEXTLTPRO-LIGHT.TTF);
+}
+
+@font-face {
+	font-family: Dinnesxtltpro-500;
+	src: url(./fonts/DINNEXTLTPRO-MEDIUM.TTF);
+}
+
+@font-face {
+	font-family: Dinnesxtltpro-400;
+	src: url(./fonts/DINNEXTLTPRO-REGULAR.TTF);
+}
+
+* span {
+	line-height: 30px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+
+* p {
+	line-height: 30px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+* hr {
+	width: 93px;
+	height: 3px;
+	background-color: #FF001F;
+	border: none;
+	margin-block: 32px;
+}
+
+.my-8 {
+	margin-block: 8%;
+}
+
+
+#interior-360 {
+	padding-inline-end: 3%;
+	font-size: 48px;
+	text-align: left;
+	padding-inline-start: 10%;
+}
+
+.mx-auto {
+	margin-inline: auto;
+}
+
+.mx-end {
+	margin-inline-start: 80%;
+}
+
+.py-8 {
+	padding-block: 4%;
+}
+
+
+
+/* textos */
+
+.interior-360-degrees-car {
+	font-size: 48px;
+	font-family: 'Dinnesxtltpro-400';
+}
+
+.f-din-ligth {
+	font-family: 'Dinnesxtltpro-300' !important;
+}
+
+.f-din-regular {
+	font-family: 'Dinnesxtltpro-400';
+}
+
+.f-din-bold {
+	font-family: 'Dinnesxtltpro-500';
+}
+
+.f-48 {
+	font-size: 48px;
+}
+
+.f-40 {
+	font-size: 40px;
+}
+
+.f-32 {
+	font-size: 32px;
+}
+
+
+.f-28 {
+	font-size: 28px;
+}
+
+
+.f-22 {
+	font-size: 22px;
+}
+
+.f-20 {
+	font-size: 20px;
+}
+
+.f-16 {
+	font-size: 16px;
+}
+
+
+
+.bg-dark {
+	background-color: #000000;
+	color: aliceblue;
+}
+
+
+
+.nav i[class*="-bars"] {
+	display: none;
+}
+
+.nav {
+	padding: 35px;
+	display: grid;
+	grid-template-columns: 150px auto 500px 50px;
+	align-items: center;
+}
+
+.nav p {
+	font-family: Dinnesxtltpro-700;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.nav .menu {
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav .menu a {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.nav .select {
+	display: flex;
+}
+
+.nav .select select {
+	appearance: none;
+	border: none;
+	outline: none;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.nav select option {
+	margin: auto;
+}
+
+aside.lateral-menu {
+	display: none;
+}
+
+
+
+
+.text1 {
+	margin-top: 86px;
+	text-align: center;
+	font-family: Dinnesxtltpro-400;
+}
+
+.text1 h2 {
+	font-size: 48px;
+}
+
+
+
+.text1 p {
+	margin-top: 31px;
+	text-align: center;
+	font-size: 28px;
+	padding-inline: 5%;
+}
+
+
+
+
+.spin {
+	justify-items: center;
+	justify-content: center;
+	margin-top: 116px;
+}
+
+.spin-img-p {
+	text-align: center;
+	font-family: Dinnesxtltpro-400;
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: 0em;
+	margin-top: 20%;
+}
+
+.spin p {
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+	.nav {
+		padding: 20px;
+		display: grid;
+		grid-template-columns: 150px auto auto 50px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.nav i[class*="-bars"] {
+		display: inline-block;
+		display: flex;
+		justify-content: center;
+		background-color: white;
+		border: none;
+	}
+
+	.nav {
+		padding: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.nav p,
+	.nav select,
+	.nav .menu a {
+		display: none;
+	}
+
+	.text1 h2 {
+		font-size: 25px;
+	}
+
+	aside.lateral-menu {
+		position: fixed;
+		top: 0px;
+		right: -100%;
+		width: 100%;
+		height: 100vh;
+		background-color: #fefefe;
+		z-index: 10;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		padding: 1rem;
+		transition: all 0.5s ease-in-out;
+
+		&.open {
+			right: 0px;
+		}
+
+		& .menu {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+
+			& a {
+				text-decoration: none;
+				color: #1a1a1a;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+/* bootstrap */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+
+[class*="col-"] {
+	width: 100%;
+}
+
+
+.center {
+	text-align: center;
+}
+
+.container {
+	/* background-color: #121116; */
+	padding-inline: 13%;
+	/* color: aliceblue; */
+}
+
+
+@media only screen and (max-width: 800px) {
+
+	/* For mobile: */
+	.col-s-1 {
+		width: 8.33%;
+	}
+
+	.col-s-2 {
+		width: 16.66%;
+	}
+
+	.col-s-3 {
+		width: 25%;
+	}
+
+	.col-s-4 {
+		width: 33.33%;
+	}
+
+	.col-s-5 {
+		width: 41.66%;
+	}
+
+	.col-s-6 {
+		width: 50%;
+	}
+
+	.col-s-7 {
+		width: 58.33%;
+	}
+
+	.col-s-8 {
+		width: 66.66%;
+	}
+
+	.col-s-9 {
+		width: 75%;
+	}
+
+	.col-s-10 {
+		width: 83.33%;
+	}
+
+	.col-s-11 {
+		width: 91.66%;
+	}
+
+	.col-s-12 {
+		width: 100%;
+	}
+
+	body {
+		overflow-x: hidden;
+	}
+
+	.text-banner {
+		color: #000000;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 50px;
+		text-align: center;
+		padding-inline: 8%;
+		padding-top: 10%;
+		font-family: 'Dinnesxtltpro-300';
+	}
+
+	.img-banner img {
+		width: 150%;
+		position: relative;
+	}
+
+
+	.img-banner-2 img {
+		width: 150%;
+		position: relative;
+		bottom: -5px;
+	}
+
+	.text-banner p {
+		font-family: Roboto;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 26px;
+		letter-spacing: 0em;
+		text-align: center;
+		margin-top: 8%;
+	}
+
+	.logos-apps {
+		margin-top: 10%;
+		grid-template-columns: auto;
+	}
+
+	.logos-apps img {
+		width: 70rem;
+		max-width: 200px;
+		z-index: 1;
+	}
+
+
+	/* especificos for mobile*/
+	* img {
+		max-width: 100%;
+	}
+
+	.spin {
+		text-align: center;
+		padding-inline: 8%;
+	}
+
+	.spin-img img {
+		display: grid;
+		align-items: center;
+		margin-bottom: 15%;
+	}
+
+	#flecha {
+		display: none;
+	}
+
+	.texto1 p {
+		padding-inline: 15% !important;
+
+	}
+
+	.spin-img {
+		width: 90%;
+		margin-bottom: 20%;
+	}
+
+	.frame-2 p {
+		position: relative;
+		right: -4%;
+		top: -3rem;
+		max-width: 70%;
+	}
+
+	#interior-360 {
+		text-align: center;
+	}
+
+	.row img {
+		max-width: 100%;
+	}
+
+
+	* hr {
+		margin-inline: auto !important;
+	}
+
+	* {
+		text-align: center;
+	}
+
+
+}
+
+@media only screen and (min-width: 801px) {
+
+	/* For desktop: */
+	.col-1 {
+		width: 8.33%;
+	}
+
+	.col-2 {
+		width: 16.66%;
+	}
+
+	.col-3 {
+		width: 25%;
+	}
+
+	.col-4 {
+		width: 33.33%;
+	}
+
+	.col-5 {
+		width: 41.66%;
+	}
+
+	.col-6 {
+		width: 50%;
+	}
+
+	.col-7 {
+		width: 58.33%;
+	}
+
+	.col-8 {
+		width: 66.66%;
+	}
+
+	.col-9 {
+		width: 75%;
+	}
+
+	.col-10 {
+		width: 83.33%;
+	}
+
+	.col-11 {
+		width: 91.66%;
+	}
+
+	.col-12 {
+		width: 100%;
+	}
+
+
+
+	.text-banner {
+		position: absolute;
+		display: grid;
+		justify-content: start;
+		grid-template-rows: 180px 130px 50px;
+		color: #ffffff;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 50px;
+		text-align: left;
+		padding: 81px 0 0 89px;
+		font-family: Dinnesxtltpro-300;
+	}
+
+	.img-banner img {
+		width: 100%;
+	}
+
+	.img-banner-2 img {
+		width: 100%;
+		position: relative;
+		bottom: -5px;
+	}
+
+	.text-banner p {
+		font-family: Roboto;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 26px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+
+	.logos-apps {
+		display: grid;
+		grid-template-columns: 200px auto;
+	}
+
+	.logos-apps-footer {
+		display: flex;
+		justify-content: center;
+	}
+
+	.logos-apps-footer img {
+		margin-inline: 20px;
+	}
+
+
+
+	/* especificos for desktop */
+
+
+	.mw-80 {
+		max-width: 70%;
+	}
+
+	.p-50 {
+		padding-inline: 20%;
+	}
+
+	.spin-img {
+		width: 65%;
+		position: relative;
+		left: 20%;
+	}
+
+
+	.frame-2 p {
+		position: relative;
+		right: -2%;
+		top: -4rem;
+		max-width: 50%;
+		text-align: end;
+	}
+
+	* img {
+		max-width: 100%;
+	}
+
+}
