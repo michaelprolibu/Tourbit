@@ -335,6 +335,10 @@ aside.lateral-menu {
 	text-align: center;
 }
 
+.end {
+	text-align: end;
+}
+
 .container {
 	/* background-color: #121116; */
 	padding-inline: 13%;
