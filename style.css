@@ -36,7 +36,7 @@
 	box-sizing: border-box;
 }
 
-.nav > i[class*="-bars"]{
+.nav i[class*="-bars"]{
 	display: none;
 }
 
@@ -47,29 +47,41 @@
 	align-items: center;
 }
 
-.nav > .menu{
+.nav p{
+	font-family: Dinnesxtltpro-700;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.nav .menu{
 	display: flex;
 	justify-content: space-around;
 }
 
-.nav > .menu > a{
+.nav .menu a{
 	text-decoration: none;
 	color: black;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
+	font-size: 18px;
 }
 
-.nav > select{
+.nav .select{
+	display: flex;
+}
+
+.nav .select select{
 	appearance: none;
 	border: none;
-	background-image: url(./assets/Rectangle\ 18.svg);
-	background-repeat: no-repeat;
-	background-position: 20px;
 	outline: none;
 	font-weight: 700;
+	font-size: 20px;
+	padding: 10px;
 }
-
+.nav select option{
+	margin: auto;
+}
 .text-banner{
 	position: absolute;
 	display: grid;
@@ -84,11 +96,11 @@
 	font-family: Dinnesxtltpro-300;
 }
 
-.img-banner > img{
+.img-banner img{
 	width: 100%;
 }
 
-.text-banner > p{
+.text-banner p{
 	font-family: Roboto;
 	font-size: 20px;
 	font-weight: 300;
@@ -111,38 +123,52 @@ aside.lateral-menu{
 	text-align: center;
 	font-family: Dinnesxtltpro-400;
 }
-.text1 > h2{
-	font-size: 43px;
+.text1 h2{
+	font-size: 48px;
 }
-.text1 > hr{
+.text1 hr{
 	margin: 32px auto;
 	width: 93px;
 	height: 5px;
 	background-color: #FF001F;
 }
-.text1 > p{
+.text1 p{
 	margin-top: 31px;
 	text-align: center;
-	font-size: 23px;
+	font-size: 28px;
 }
 .spin{
 	display: grid;
-	grid-template-columns: 40% 33%;
+	grid-template-columns: 27% 33%;
 	justify-items: center;
 	justify-content: center;
 	margin-top: 116px;
 }
 .spin-img{
 	display: grid;
+	margin-left: 20%;
 }
-.spin-img > p{
+.spin-img img{
+	width:88%;
+	margin:auto;
+}
+.spin-img p{
 	text-align: center;
+	font-family: Dinnesxtltpro-400;
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: 0em;
+	margin-top: 20%;
 }
-.spin > p{
+.spin p{
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
+.mx-width-75{
+	max-width: 80%;
+}
+
 @media screen and (max-width: 992px){
 	.nav{
 		padding: 20px;
@@ -163,7 +189,7 @@ aside.lateral-menu{
 		padding: 35px;
 	}
 
-	.text-banner > p{
+	.text-banner p{
 		font-family: Roboto;
 		font-size: 13px;
 		font-weight: 300;
@@ -175,7 +201,7 @@ aside.lateral-menu{
 }
 
 @media screen and (max-width: 800px){
-	.nav > i[class*="-bars"]{
+	.nav i[class*="-bars"]{
 		display: inline-block;
 		display: flex;
 		justify-content: center;
@@ -190,7 +216,7 @@ aside.lateral-menu{
 		align-items: center;
 	}
 	
-	.nav > p, .nav > select, .nav > .menu > a{
+	.nav p, .nav select, .nav .menu a{
 		display: none;
 	}
 	
@@ -208,7 +234,7 @@ aside.lateral-menu{
 		padding: 0;
 	}
 	
-	.text-banner > p{
+	.text-banner p{
 		font-family: Roboto;
 		font-size: 13px;
 		font-weight: 300;
@@ -223,8 +249,12 @@ aside.lateral-menu{
 	 	justify-content: space-evenly;
 	}
 
-	.logos-apps > a >img{
+	.logos-apps img{
 		width: 100px;
+	}
+
+	.text1 h2{
+		font-size: 25px;
 	}
 
 	aside.lateral-menu{
