@@ -236,8 +236,6 @@ aside.lateral-menu {
 }
 
 
-
-
 @media screen and (max-width: 992px) {
 	.nav {
 		padding: 20px;
@@ -499,6 +497,21 @@ aside.lateral-menu {
 	* {
 		text-align: center;
 	}
+
+	.end {
+		text-align: center;
+	}
+	
+	#exteriordetails-text{
+		position: relative;
+		top: 25rem;
+	}
+	
+	#exteriordetails-img{
+		position: relative;
+		top: -25rem;
+	}
+	
 
 
 }
